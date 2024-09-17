@@ -1,0 +1,80 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 2rem;
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.logo {
+  font-size: 1.2rem;
+}
+
+/* .rightHandSection {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+} */
+
+.burgerBtn {
+  all: unset;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.burgerBtn img {
+  width: 100%;
+}
+
+.overlay {
+  display: none;
+}
+
+.overlay nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+.overlay nav ul li a {
+  text-decoration: none;
+  color: #1825d4;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .main nav {
+    display: none;
+  }
+
+  .main button {
+    display: inline-block;
+  }
+
+  .overlay {
+    display: inline-block;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #f0f6fd;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: 0.4s ease-in-out;
+  }
+
+  .showOverlay {
+    transform: translateX(0);
+  }
+}

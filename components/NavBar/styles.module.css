@@ -1,0 +1,15 @@
+.main ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  list-style: none;
+}
+
+.main ul li a {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.main ul li a:hover {
+  color: blue;
+}
